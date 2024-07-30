@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 17:55:02 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/26 23:01:43 by dgerage-         ###   ########.fr       */
+/*   Updated: 2024/07/29 22:07:09 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,17 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	{
 		src_len++;
 	}
-	i = 0;
-	while (src[i] != '\0' && i < (size - 1))
+	if (size > 0)
 	{
-		dest[i] = src[i];
-		i++;
+		i = 0;
+		while (src[i] != '\0' && i < (size - 1))
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
+		return (src_len);
 	}
-	dest[i] = '\0';
-	return (src_len);
 }
 /*
 int main(void) {
