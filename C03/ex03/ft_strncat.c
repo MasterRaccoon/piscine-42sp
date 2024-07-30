@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 14:21:10 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/29 23:38:54 by davi             ###   ########.fr       */
+/*   Updated: 2024/07/30 19:42:32 by dgerage-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	main(void)
 	char src[] = "World!";
 	unsigned int	nb;
 
-	nb = 2;
+	nb = 3;
 	// Antes da concatenação
 	printf("Antes: %s\n", dest);
 
