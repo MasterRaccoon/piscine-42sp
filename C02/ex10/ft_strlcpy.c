@@ -6,7 +6,7 @@
 /*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 17:55:02 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/29 22:07:09 by davi             ###   ########.fr       */
+/*   Updated: 2024/07/29 22:52:53 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,17 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 }
 /*
-int main(void) {
-    char src[] = "Hello, World!";
-    char dest[6];
-    unsigned int result;
+int main(void)
+{
+	char src[] = "Hello, World!";
+	char dest[7];
+	unsigned int result;
 
-    result = ft_strlcpy(dest, src, sizeof(dest));
+	result = ft_strlcpy(dest, src, sizeof(dest));
 
-    printf("Copied string: %s\n", dest);
-    printf("Length of src: %u\n", result);
+	printf("Copied string: %s\n", dest);
+	printf("Length of src: %u\n", result);
 
-    return 0;
+	return 0;
 }
 */
