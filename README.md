@@ -1,2 +1,1 @@
-# piscine-42sp
-piscine-42sp exercices
+Piscine-42sp Exercise Solutions
