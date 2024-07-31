@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 20:31:35 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/30 23:25:29 by dgerage-         ###   ########.fr       */
+/*   Updated: 2024/07/31 03:13:27 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,10 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
-	{
-		ft_putchar('-');
-		ft_putchar('2');
-		nb = 147483648;
-	}
 	if (nb < 0)
 	{
 		ft_putchar('-');
-		nb = nb * -1;
+		nb = -nb;
 	}
 	if (nb >= 10)
 	{
@@ -37,19 +31,24 @@ void	ft_putnbr(int nb)
 	}
 	else
 	{
-		ft_putchar(nb + 48);
+		ft_putchar(nb + '0');
 	}
 }
-
+/*
 int	main(void)
 {
+	ft_putnbr(42);
+	write(1, "\n", 1);
 	ft_putnbr(-42);
 	write(1, "\n", 1);
-	ft_putnbr(-422);
+	ft_putnbr(422);
 	write(1, "\n", 1);
-	ft_putnbr(-4242);
+	ft_putnbr(4242);
 	write(1, "\n", 1);
-	ft_putnbr(-424242424);
+	ft_putnbr(424242424);
+	write(1, "\n", 1);
+	ft_putnbr(-2147483647);
 	write(1, "\n", 1);
 	return (0);
 }
+*/
