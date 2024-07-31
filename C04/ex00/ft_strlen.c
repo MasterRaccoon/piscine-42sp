@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/12 18:27:34 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/29 23:05:57 by davi             ###   ########.fr       */
+/*   Created: 2024/07/30 20:08:01 by dgerage-          #+#    #+#             */
+/*   Updated: 2024/07/30 20:34:00 by dgerage-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putchar(char c)
+int	ft_strlen(char *str)
 {
-	write(1, &c, 1);
+	int	str_len;
+
+	str_len = 0;
+	while (str[str_len] != '\0')
+	{
+		str_len++;
+	}
+	return (str_len);
 }
 /*
 int	main(void)
 {
-	char	newline;
+	char	str[] = "Hello, World!";
+	int		result;
 
-	newline = '\n';
-	ft_putchar('c');
-	write(1, &newline, 1);
-	return (0);
+	result = ft_strlen(str);
+	printf("%d\n", result);
 }
 */

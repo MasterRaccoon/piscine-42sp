@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 14:53:31 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/22 18:23:47 by dgerage-         ###   ########.fr       */
+/*   Updated: 2024/07/29 23:06:42 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	ft_strlen(char *str)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	while (str[len] != '\0')
-	{		
+	{
 		len++;
 	}
 	return (len);
