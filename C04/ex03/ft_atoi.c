@@ -6,7 +6,7 @@
 /*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 03:20:49 by davi              #+#    #+#             */
-/*   Updated: 2024/07/31 03:54:39 by davi             ###   ########.fr       */
+/*   Updated: 2024/07/31 04:20:04 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,8 @@ int	ft_atoi(char *str)
 
 	result = 0;
 	sign = 1;
-	while (*str == ' ' || (*str >= 9 && *str <= 13))
-	{
-		str++;
-	}
-	while (*str == '+' || *str == '-')
+	while (*str == ' ' || (*str >= 9 && *str <= 13) || *str == '+'
+		|| *str == '-')
 	{
 		if (*str == '-')
 		{
@@ -40,8 +37,8 @@ int	ft_atoi(char *str)
 }
 /*
 int main(void) {
-	char test1[] = "   1234";        // Teste com espaços iniciais
-	char test2[] = "--+--+1234";   // Teste com múltiplos sinais
+	char test1[] = " - + + 1234";   // Teste com espaços iniciais
+	char test2[] = "--+--+1234";    // Teste com múltiplos sinais
 	char test3[] = "+42abc";        // Teste com caracteres após o número
 	char test4[] = "-00123";        // Teste com zeros à esquerda
 	char test5[] = "  +0";          // Teste com zero
