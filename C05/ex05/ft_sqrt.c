@@ -6,16 +6,16 @@
 /*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 21:11:58 by davi              #+#    #+#             */
-/*   Updated: 2024/07/31 21:54:26 by davi             ###   ########.fr       */
+/*   Updated: 2024/07/31 23:01:28 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h> 
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-	int root;
-	int sqrt;
+	int	root;
+	int	sqrt;
 
 	root = 1;
 	sqrt = 0;
