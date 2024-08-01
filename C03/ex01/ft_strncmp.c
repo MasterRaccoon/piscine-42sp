@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 23:53:45 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/30 22:45:16 by dgerage-         ###   ########.fr       */
+/*   Updated: 2024/08/01 04:19:56 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 
 	i = 0;
 	if (n == 0)
-	{	
+	{
 		return (0);
 	}
 	else
