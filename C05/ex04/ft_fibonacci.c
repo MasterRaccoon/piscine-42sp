@@ -6,15 +6,16 @@
 /*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 19:53:57 by davi              #+#    #+#             */
-/*   Updated: 2024/07/31 21:10:36 by davi             ###   ########.fr       */
+/*   Updated: 2024/07/31 21:13:34 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_fibonacci(int index)
+int	ft_fibonacci(int index)
 {
 	int	result;
+
 	if (index < 0)
 	{
 		return (-1);
