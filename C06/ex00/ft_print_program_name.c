@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/12 18:27:34 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/29 23:05:57 by davi             ###   ########.fr       */
+/*   Created: 2024/08/01 03:23:53 by dgerage-          #+#    #+#             */
+/*   Updated: 2024/08/01 15:56:29 by dgerage-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+int	main(int argc, char *argv[])
 {
-	write(1, &c, 1);
-}
-/*
-int	main(void)
-{
-	char	newline;
+	int	i;
 
-	newline = '\n';
-	ft_putchar('c');
-	write(1, &newline, 1);
+	i = 0;
+	while (argv[0][i] != '\0')
+	{
+		write(1, &argv[0][i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
+	(void)argc;
 	return (0);
 }
-*/
