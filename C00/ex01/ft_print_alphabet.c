@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgerage- <dgerage-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davi <davi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 21:39:53 by dgerage-          #+#    #+#             */
-/*   Updated: 2024/07/14 18:31:55 by dgerage-         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:09:57 by davi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_print_alphabet(void)
 		c++;
 	}
 }
-
+/*
 int	main(void)
 {
 	char	newline;
@@ -32,3 +32,4 @@ int	main(void)
 	ft_print_alphabet();
 	write(1, &newline, 1);
 }
+*/
